@@ -1,8 +1,6 @@
 .button {
     background-color: var(--button-bg-color);
     color: var(--light-color);
-    width: 115px;
-    height: 50px;
     border: none;
     border-radius: 15px;
     font-weight: 700;
@@ -15,3 +13,4 @@
     transition: 0.5s;
     scale: 1.05;
 }
+

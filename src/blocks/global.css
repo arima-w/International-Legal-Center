@@ -9,7 +9,7 @@ body {
   max-inline-size: 1440px;
   margin: 0 auto;
   font-family: "GothamPro";
-  padding: 49px 80px;
+  background-color: var(--body-bg-color);
 }
 
 h1,
@@ -20,22 +20,6 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p::selection {
-  background-color: var(--accent-color);
-  color: var(--light-color);
-}
-
-a::selection {
-  background-color: var(--accent-color);
-  color: var(--light-color);
 }
 
 ul {
@@ -49,8 +33,7 @@ picture {
   padding: 0;
 }
 
-button,
-a {
+button {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
@@ -59,9 +42,36 @@ a {
   transition: 0.5s;
 }
 
-a:hover {
+a {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  color: var(--text-color);
+  text-wrap: nowrap;
+}
+
+a:after {
+  display: block; 
+  content: ""; 
+  height: 2px; 
+  width: 0%; 
+  background-color: var(--accent-color); 
+  transition: width 0.4s ease-in-out; 
+}
+
+a:not(.pricingPlans__card-link):hover:after,
+a:not(.pricingPlans__card-link):focus:after {
+width: 100%;
+}
+
+a:hover,
+a:focus {
   color: var(--accent-color);
-  transition: 0.5s;
-  text-decoration: underline 2px;
-  text-underline-offset: 3px;
+  transition: color 0.4s ease-in-out;
+}
+
+@media (width <= 660px) {
+  body {
+    padding: 30px;
+  }
 }

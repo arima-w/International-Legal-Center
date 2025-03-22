@@ -1,0 +1,167 @@
+@media (width <= 1265px) {
+    .info__content {
+        margin-right: 0;
+    }
+
+    .info__block {
+        margin-left: 0;
+    }
+}
+
+@media (width <= 1010px) {
+    .initial__footer {
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .initial__content-body {
+        padding-top: 10px;
+    }
+
+    .initial__content-img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        opacity: 0.5;
+        left: 0;
+    }
+
+}
+
+@media (width <= 970px) {
+    .advantages {
+        margin-top: 45px;
+    }
+
+    .advantages__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantages__content-list {
+        margin-top: 10px;
+    }
+}
+
+@media (width <= 950px) {
+    .header__body {
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+
+    .header__div {
+        gap: 20px;
+    }
+
+    .header__tel {
+        display: none;
+    }
+
+    .header__div-text {
+        margin-left: 10px;
+    }
+}
+
+@media (width <= 900px) {
+    .pricingPlans__block-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricingPlans__card-list--big {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricingPlans__card-item {
+        padding-right: 10px;
+    }
+}
+
+@media (width <= 815px) {
+    .info__content {
+        width: 80%;
+    }
+
+    .info__block-title {
+        text-align: center;
+    }
+    
+    .info {
+        flex-direction: column;
+        margin-top: 26px;
+        row-gap: 20px;
+    }
+
+    .info__block {
+        align-items: center;
+        width: 100%;
+    }
+
+    .info__content-dicorate {
+        top: -8px;
+    }
+}
+
+@media (width <= 745px) {
+    .menu__list {
+        column-gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (width <= 700px) {
+    .advantages__content-sirius {
+        width: 80%;
+        padding-top: 20px;
+    }
+}
+
+@media (width <= 660px) {
+    .header__button {
+        width: 80px;
+        margin-left: 10px;
+    }
+
+    .header__div-text {
+        display: none;
+    }
+
+    .logo {
+        width: 50px;
+    }
+}
+
+@media (width <= 600px) {
+    .initial {
+        margin-top: 20px;
+    }
+
+    .initial__content-title {
+        text-align: center;
+    }
+
+    .initial__footer {
+        align-self: center;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .initial__footer-list {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+}
+
+@media (width <= 565px) {
+    .menu {
+        margin-top: 20px;
+    }
+
+    .baner__image-text {
+        width: 80%;
+    }
+}

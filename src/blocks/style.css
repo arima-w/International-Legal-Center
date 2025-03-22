@@ -638,6 +638,9 @@
 .baner {
     width: 100%;
     margin-top: 154px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .baner__image {
@@ -681,16 +684,29 @@
 .baner__item {
     width: clamp(280px, 80vw, 1062px);
     border-radius: 20px;
-    background-color: #4614E8;
+    background-color: var(--light-color);
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding-top: 50px;
-    padding-left: 112px;
+    padding-left: 110px;
+    padding-top: 46px;
+    padding-bottom: 50px;
+}
+
+.baner__item-image {
+    margin-top: 13px;
+}
+
+.baner__item-image--accent {
+    margin-top: 20px;
 }
 
 .baner__item-content {
-    width: 515px;
+    width: 54%;
+    margin-left: 32px;
+}
+
+.baner__item-content--accent {
+    margin-left: 63px;
 }
 
 .baner__item-title {
@@ -698,4 +714,37 @@
     font-size: 16px;
     font-weight: 400px;
     line-height: 36px;
+}
+
+.baner__item-text {
+    color: var(--gray-dark-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+.baner__item-span {
+    color: var(--gray-dark-color);
+    font-weight: 900;
+}
+
+.baner__item-text--accent {
+    color: #B7B6B6;
+}
+
+.baner__item-text > p:not(:first-child) {
+    margin-top: 10px;
+}
+
+.baner__item-list {
+    list-style: inside;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+.baner__button {
+    width: 250px;
+    height: 56px;
+    margin-top: 30px;
 }

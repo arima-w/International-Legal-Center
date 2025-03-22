@@ -102,6 +102,11 @@
     .info__content-dicorate {
         top: -8px;
     }
+
+    .baner__item {
+        justify-content: center;
+        padding-left: 0;
+    }
 }
 
 @media (width <= 745px) {
@@ -131,6 +136,15 @@
 
     .logo {
         width: 50px;
+    }
+
+    .baner__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .baner__item-content {
+        margin-left: 0;
     }
 }
 

@@ -74,6 +74,16 @@
         flex-direction: column;
         row-gap: 30px;
     }
+
+    .director {
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    .director__body {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 @media (width <= 950px) {
@@ -93,6 +103,11 @@
     .header__div-text {
         margin-left: 10px;
     }
+
+    .footer__info {
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
 
 @media (width <= 900px) {
@@ -110,6 +125,12 @@
     .pricingPlans__card-item {
         padding-right: 10px;
     }
+
+    .footer__content {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
 }
 
 @media (width <= 815px) {
@@ -155,6 +176,11 @@
 
     .forecasts__list {
         padding-right: 0;
+    }
+
+    .director__body-img-text {
+        bottom: -73px;
+        right: -17px;
     }
 }
 
@@ -218,7 +244,17 @@
         row-gap: 30px;
     }
 
+    .footer__block {
+        flex-direction: column;
+    }
 
+    .footer__block-text {
+        text-align: center;
+    }
+
+    .footer__list {
+        padding-right: 0;
+    }
 
 }
 
